@@ -10,18 +10,16 @@ Opened two sessions into my Azure Linux VM:
 
 ### Session 2: ran commands to identify and kill zombie  
 
-
-
 ### commands used to identfy zombie
 
  ps aux | grep " Z"
 
  ps -eo pid,ppid,stat | grep Z
 
-![alt text](image-3.png)
+![alt text](./screenshots/image-3.png)
 
   kill -9 ppid - to kill the parent process
 
-![alt text](image-4.png)
+![alt text](./screenshots/image-4.png)
 
 
