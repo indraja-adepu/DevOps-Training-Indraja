@@ -6,7 +6,7 @@ Opened two sessions into my Azure Linux VM:
 
 ### Session 1: ran the python script
 
-![alt text](image-2.png)
+![alt text](./screenshots/image-2.png)
 
 ### Session 2: ran commands to identify and kill zombie  
 
