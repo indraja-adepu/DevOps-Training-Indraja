@@ -1,15 +1,18 @@
-Explanation:
+### Explanation:
 
 created a zombie process using a simple Python script by forking a child and allowing the child to exit immediately while the parent slept for a long time.
 
 Opened two sessions into my Azure Linux VM:
 
-Session 1: ran the python script
+### Session 1: ran the python script
+
 ![alt text](image-2.png)
 
-Session 2: used ps aux | grep Z to verify the zombie and kill
+### Session 2: ran commands to identify and kill zombie  
 
-commands used to identfy zombie
+
+
+### commands used to identfy zombie
 
  ps aux | grep " Z"
 
