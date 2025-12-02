@@ -62,9 +62,125 @@ Linux is more secure because it follows a strict “**deny first**, allow only m
 
 ### File System in Linux
 
-<img width="719" height="631" alt="image" src="https://github.com/user-attachments/assets/28860e48-d393-4b81-b740-baffaffb6c78" />
+![alt text](image-1.png)
+
+•Everything is a file in linux.
+
+•Linux uses a unified file abstraction model.
+•Devices under /dev, process data under /proc, kernels & hardware attributes under /sys, pipes, sockets, directories — all behave like files.
+•The same system calls — open, read, write, close — can be used universally.
+
+![alt text](image.png)
+
+### Important Directories
+sudo su - switch to root
+
+cd / - go to home dir
+
+ls /etc - ls on each directory 
 
 
+/etc - Configuration files (os-release - os , version | passwd -users details | hosts - ip addresses)
 
+similar to C:/ drive in windows
 
+/var - Variable data (logs, cache, frequently changing files)
 
+/opt - Optional third-party dependencies (instal custom tools - to access for everyone)
+
+/home - User directories
+
+/sbin - Essential system binaries (used by sys admins - useradd, rmuser, etc)
+
+/bin  - user binaries (non admin command - date, sed, sh etc)
+
+/proc - Process and kernel information
+
+/dev - Device files
+
+/mnt - mount new volumes /disks
+
+### what happens when you run a command:
+•like ls or useradd etc
+
+•useradd user1 - it wil go and check in sbin folder for useradd cmd frm there cmd gets executed
+
+### inode Concept
+ ls -i returns flenames, inodes associated in a table
+ ![alt text](image-2.png)
+ ![alt text](image-3.png)
+
+• Definition: Metadata structure storing file information (permissions, size, owner, timestamps, block pointers)
+
+disk has plenty of space left for data but you cannot create more files and it says disk full or you get write error - it is bcause your inodes are exhausted.
+
+df -h
+
+df-i (check inode usage)
+
+Hardlink soft lnk files
+![alt text](image-4.png)
+### creating hardlink between files - both files point same loc on hardisk. Any one is changed both files are effected. If one is deleted other still remains and keeps ponting to data on Hard disk 
+![alt text](image-5.png)
+
+### soft link file creation
+![alt text](image-6.png)
+![alt text](image-7.png)
+
+### Linux Commands
+Navigation: ls, cd, pwd, tree
+File Operations: touch, mkdir, cat, cp, mv, rm
+Search/Filter: grep, find, sed, cut, sort, uniq
+Permissions: chmod, chown, chgrp
+System Info: df, du, who, uname
+
+### search / Filter commands examples
+
+grep -i "error" /var/log/syslog  
+
+find / -name "abc.txt"
+
+sed – Edit streams (search/replace)
+
+### sort
+sort names.txt
+
+sort -n nums.txt      -- numeric sort
+
+sort -r names.txt    -- reverse
+
+### uniq
+sort names.txt | uniq
+
+sort names.txt | uniq -c      # count occurrences
+
+sort names.txt | uniq -d      # show duplicates only
+
+### Pipe (|): Pass output of one command as input to another
+Redirection:
+
+![alt text](image-8.png)
+
+Wildcards: * (any characters), ? (single character), [] (character class)
+
+Anchors: ^ (start of line), $ (end of line)
+
+### Wildcards(*, ?, [])
+
+chmod 644 *.sh (modify permis of files with .sh extension)
+
+rm data[AB].csv (remove fles with filename havng character set as A or B )
+
+ls file?.txt (lists fle with 1 char after file in filename)
+
+### Anchors: ^ (start of line), $ (end of line)
+
+1. Lines that start with “root” (^)
+
+    grep "^root" users.txt
+2. Lines ending with /bin/bash ($)
+
+    grep "/bin/bash$" users.txt
+
+### PRACTICE REGEX USING sed
+![alt text](image-10.png)
