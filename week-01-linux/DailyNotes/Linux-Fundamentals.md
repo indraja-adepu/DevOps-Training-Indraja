@@ -41,14 +41,28 @@ Linux is more secure because it follows a strict “**deny first**, allow only m
 +----------------------------------------------------+
 | Hardware (CPU, RAM, Disk, Network, Peripherals)   |
 +----------------------------------------------------+
+```
+### Boot Process
+| Step                                | Purpose             | Simple Explanation                                                  |
+| ----------------------------------- | ------------------- | ------------------------------------------------------------------- |
+| **1. BIOS / UEFI**                  | Hardware Check      | BIOS checks if RAM, CPU, keyboard, etc. are working (POST test).    |
+| **2. Bootloader (GRUB)**            | Loads OS            | Bootloader chooses which OS to start and loads the Linux kernel.    |
+| **3. Kernel Initialization**        | Controls System     | Linux kernel loads into RAM and takes control of hardware & system. |
+| **4. Init System (systemd / init)** | Starts Services     | Init starts basic processes (network, logging, etc.).               |
+| **5. System Services**              | Background Programs | Starts services like network manager, display manager, ssh, etc.    |
+| **6. Login Prompt**                 | User Login          | Shows login screen (Terminal or GUI) for the user to log in.        |
 
-Linux Kernel: Key Responsibilities
+
+### Linux Kernel: Key Responsibilities
 • Process Management - Process Lifecycle ()      
 • Memory Management       
 • File System Management                 
 • Device Drivers                         
 • Network Stack                             
 
+### File System in Linux
+
+<img width="719" height="631" alt="image" src="https://github.com/user-attachments/assets/28860e48-d393-4b81-b740-baffaffb6c78" />
 
 
 
