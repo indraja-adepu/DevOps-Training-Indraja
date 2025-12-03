@@ -176,3 +176,53 @@ Kill signals
 
 
 
+#
+### Checking Distribution
+
+
+        ### Method 1
+        cat /etc/os-release
+
+        ### Method 2
+        lsb_release -a
+
+# Networking
+
+Connecting devices so they can exchange data.
+### Core Concepts
+#### 1. IP Address
+- **Purpose:** Unique address for each device/server
+- **Analogy:** Home address or building address
+- **Example:** `192.168.1.100`
+- **Types:** IPv4, IPv6
+
+#### 2. Port Number
+- **Purpose:** Identifies specific service/application on a device
+- **Analogy:** Apartment/room number in a building
+- **Range:** 0-65535
+- **Examples:**
+  - SSH: 22
+  - HTTP: 80
+  - HTTPS: 443
+  - MySQL: 3306
+
+#### 3. MAC Address
+- **Purpose:** Hardware-level unique identifier
+- **Characteristics:** Assigned by manufacturer, permanent
+- **Format:** `00:1B:44:11:3A:B7`
+
+#### 4. Router
+- **Purpose:** Forwards packets between networks
+- **Function:** Finds optimal path to destination IP
+- **Analogy:** Post office routing mail to correct location
+
+#### 5. Packets
+- **Definition:** Small chunks of data transmitted over network
+- **Analogy:** Envelopes containing portions of a message
+
+#### 6. Protocols
+- **Definition:** Rules/standards for network communication
+- **Examples:** TCP, UDP, HTTP, HTTPS, SSH
+- **Purpose:** Ensure consistent communication between devices
+
+![alt text](zombie-process-assignment/screenshots/DNS.png)
