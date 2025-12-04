@@ -15,7 +15,7 @@ and uses the kitchen tools (CPU, memory, disk) to prepare it.
 Without OS = No chef → restaurant cannot function.
 
 ### Key Responsibilities
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/e7561e66-a18c-493d-b0c1-8755671de161" />
+![alt text](./screenshots/image.png)
 
 Manages Resources, Users, FileSystem, Memory, Processes
 
@@ -62,7 +62,7 @@ Linux is more secure because it follows a strict “**deny first**, allow only m
 
 ### File System in Linux
 
-![alt text](image-1.png)
+![alt text](./screenshots/linux1.png)
 
 •Everything is a file in linux.
 
@@ -70,7 +70,7 @@ Linux is more secure because it follows a strict “**deny first**, allow only m
 •Devices under /dev, process data under /proc, kernels & hardware attributes under /sys, pipes, sockets, directories — all behave like files.
 •The same system calls — open, read, write, close — can be used universally.
 
-![alt text](image.png)
+![alt text](./screenshots/lnx-fle.png)
 
 ### Important Directories
 sudo su - switch to root
@@ -107,8 +107,8 @@ similar to C:/ drive in windows
 
 ### inode Concept
  ls -i returns flenames, inodes associated in a table
- ![alt text](image-2.png)
- ![alt text](image-3.png)
+ ![alt text](./screenshots/image-2.png)
+ ![alt text](./screenshots/image-3.png)
 
 • Definition: Metadata structure storing file information (permissions, size, owner, timestamps, block pointers)
 
@@ -119,13 +119,13 @@ df -h
 df-i (check inode usage)
 
 Hardlink soft lnk files
-![alt text](image-4.png)
+![alt text](./screenshots/image-4.png)
 ### creating hardlink between files - both files point same loc on hardisk. Any one is changed both files are effected. If one is deleted other still remains and keeps ponting to data on Hard disk 
-![alt text](image-5.png)
+![alt text](./screenshots/image-5.png)
 
 ### soft link file creation
-![alt text](image-6.png)
-![alt text](image-7.png)
+![alt text](./screenshots/image-6.png)
+![alt text](./screenshots/image-7.png)
 
 ### Linux Commands
 Navigation: ls, cd, pwd, tree
@@ -141,6 +141,8 @@ grep -i "error" /var/log/syslog
 find / -name "abc.txt"
 
 sed – Edit streams (search/replace)
+
+
 
 ### sort
 sort names.txt
@@ -159,7 +161,7 @@ sort names.txt | uniq -d      # show duplicates only
 ### Pipe (|): Pass output of one command as input to another
 Redirection:
 
-![alt text](image-8.png)
+![alt text](./screenshots/image-8.png)
 
 Wildcards: * (any characters), ? (single character), [] (character class)
 
@@ -183,4 +185,4 @@ ls file?.txt (lists fle with 1 char after file in filename)
     grep "/bin/bash$" users.txt
 
 ### PRACTICE REGEX USING sed
-![alt text](image-10.png)
+![alt text](./screenshots/image-10.png)

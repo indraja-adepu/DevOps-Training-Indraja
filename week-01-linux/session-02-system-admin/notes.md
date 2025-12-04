@@ -100,17 +100,17 @@ getent group developers - list users in group
         u: user-oriented format
         x: include processes without controlling terminal
 
-![alt text](zombie-process-assignment/screenshots/psaux.png)
+![alt text](./screenshots/psaux.png)
 
- ![alt text](zombie-process-assignment/screenshots/vsz.png)
+ ![alt text](./screenshots/vsz.png)
 
 #
 
 ps -ef 
 
-![alt text](zombie-process-assignment/screenshots/image-1.png)
+![alt text](./screenshots/image-1.png)
 
-![alt text](zombie-process-assignment/screenshots/image.png)
+![alt text](./screenshots/image.png)
        
 ### TTY
         Terminal Type
@@ -126,11 +126,11 @@ ps -ef
 
 ### top
 
-![alt text](zombie-process-assignment/screenshots/topcmd.png)
+![alt text](./screenshots/topcmd.png)
 
 Kill signals
 
-![alt text](zombie-process-assignment/screenshots/signals.png)
+![alt text](./screenshots/signals.png)
 
        
        systemctl Commands
@@ -189,6 +189,11 @@ Kill signals
 # Networking
 
 Connecting devices so they can exchange data.
+
+Internet- collecton of computer networks
+
+Protocols : rules setup for transfer of diff types of data 
+
 ### Core Concepts
 #### 1. IP Address
 - **Purpose:** Unique address for each device/server
@@ -225,4 +230,47 @@ Connecting devices so they can exchange data.
 - **Examples:** TCP, UDP, HTTP, HTTPS, SSH
 - **Purpose:** Ensure consistent communication between devices
 
-![alt text](zombie-process-assignment/screenshots/DNS.png)
+![alt text](./screenshots/DNS.png)
+
+![alt text](./image.png)
+
+
+      ## Mobile phonebook analogy - Domain Name system
+
+       domain names(contacts)
+
+        Ip addresess (numbers)
+
+      http -> DNS direcotry/ db
+
+   ![alt text](./image1.png) 
+    
+    
+    
+    Steps:
+    
+    local cache
+
+    local DNS server (Internet servce provider)
+
+    Root server
+
+    TLD - top level domans
+
+OS LAYERS
+
+
+
+Newtork Layer - data transfer from one netwrok to another 
+
+Transport layer - data transfer from netwokr to applicatons ( send msg to watsapp,chrome,insta ?)
+
+Analogy: sending courier to frnd on diff location
+
+you --(transport layer)->courier in your loc---(network layer)--->courier in dff loc-(transport layer)->your frnd
+
+tansport layer- TCP /UDP
+
+![alt text](./screenshots/image2.png)
+
+![alt text](./screenshots/image3.png)

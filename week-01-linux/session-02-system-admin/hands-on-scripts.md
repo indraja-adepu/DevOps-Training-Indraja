@@ -44,6 +44,6 @@ o	Practice stop/start/restart
 o	View logs
 
 
-![alt text](zombie-process-assignment/screenshots/service-handson.png)
+![alt text](./screenshots/service-handson.png)
 
-![alt text](zombie-process-assignment/screenshots/systemctl-commands.png)
+![alt text](./screenshots/systemctl-commands.png)
