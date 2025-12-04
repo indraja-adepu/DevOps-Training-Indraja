@@ -1,14 +1,13 @@
-# Bash Scripting – Practical Learning Guide
-For DevOps, Automation & Real-World Workflows
+# Bash Scripting 
 
----
 
-## Why Learn Bash?
+
+## Why Bash?
 
 In DevOps, you repeat operational tasks frequently:
 Deployments, log scrubbing, Kubernetes health checks, server maintenance.
 
-If it is repeated more than 3 times → Script it!
+If it is repeated more than 3 times → better to script rather than doing manual repeated tasks
 
 | Scenario | Manual Work | With Bash |
 |---------|-------------|-----------|
