@@ -232,7 +232,7 @@ Protocols : rules setup for transfer of diff types of data
 
 ![alt text](./screenshots/DNS.png)
 
-![alt text](./image.png)
+![alt text](./screenshots/DNSResolver.png)
 
 
       ## Mobile phonebook analogy - Domain Name system
@@ -243,7 +243,7 @@ Protocols : rules setup for transfer of diff types of data
 
       http -> DNS direcotry/ db
 
-   ![alt text](./image1.png) 
+   ![alt text](./screenshots/image1.png) 
     
     
     
